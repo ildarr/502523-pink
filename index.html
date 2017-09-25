@@ -27,8 +27,6 @@
         </ul>
       </nav>
       <h1 class="visually-hidden">Приложение Pink</h1>
-    </header>
-    <main class="page-main">
       <section class="download">
         <h2 class="visually-hidden">Загрузка приложения</h2>
         <a class="download__button link-button" href="https://www.apple.com/itunes">Скачать приложение</a>
@@ -51,6 +49,8 @@
         </ul>
         <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
+    </header>
+    <main class="page-main">
       <section class="advantages">
         <h2 class="visually-hidden">Характеристики приложения</h2>
         <p class="advantages__intro slogan">Устали от серости мегаполиса? Нам есть что вам предложить!</p>
@@ -110,23 +110,20 @@
         </div>
       </section>
       <section class="price">
-        <div class="price__container">
+        <div class="price__container slider">
           <h2 class="visually-hidden">Тарифы</h2>
           <div class="price__wrapper">
             <table class="price__table">
               <tr>
-                <th class="price__head" colspan="2">
+                <th class="price__head">
                   <span class="price__name">База</span>
                   <span class="price__value">1,99 USD</span>
                 </th>
-                <th class="price___head" colspan="2">
-                  <div class="price__ribbon">
-                    <span class="price__rotated-text">Хит</span>
-                  </div>
+                <th class="price___head">
                   <span class="price__name">Стандарт</span>
                   <span class="price__value">3,99 USD</span>
                 </th>
-                <th class="price___head" colspan="2">
+                <th class="price___head">
                   <span class="price__name">Анлим</span>
                   <span class="price__value">9,99 USD</span>
                 </th>
@@ -134,60 +131,42 @@
               <tr>
                 <td class="price__field">
                   <span class="price__text">Розовый фильтр</span>
-                </td>
-                <td class="price__check">
                   <span class="price__icon icon-check">Есть</span>
                 </td>
                 <td class="price__field">
                   <span class="price__text">Розовый фильтр</span>
-                </td>
-                <td class="price__check">
                   <span class="price__icon icon-check">Есть</span>
                 </td>
                 <td class="price__field">
                   <span class="price__text">Розовый фильтр</span>
-                </td>
-                <td class="price__check">
                   <span class="price__icon icon-check">Есть</span>
                 </td>
               </tr>
               <tr>
                 <td class="price__field">
                   <span class="price__text">Смайлики</span>
-                </td>
-                <td class="price__check">
                   <span class="price__icon icon-cross">Нет</span>
                 </td>
                 <td class="price__field">
                   <span class="price__text">Смайлики</span>
-                </td>
-                <td class="price__check">
                   <span class="price__icon icon-check">Есть</span>
                 </td>
                 <td class="price__field">
                   <span class="price__text">Смайлики</span>
-                </td>
-                <td class="price__check">
                   <span class="price__icon icon-check">Есть</span>
                 </td>
               </tr>
               <tr>
                 <td class="price__field">
                   <span class="price__text">Комментарии</span>
-                </td>
-                <td class="price__check">
                   <span class="price__icon icon-cross">Нет</span>
                 </td>
                 <td class="price__field">
                   <span class="price__text">Комментарии</span>
-                </td>
-                <td class="price__check">
                   <span class="price__icon icon-cross">Нет</span>
                 </td>
                 <td class="price__field">
                   <span class="price__text">Комментарии</span>
-                </td>
-                <td class="price__check">
                   <span class="price__icon icon-check">Есть</span>
                 </td>
               </tr>
@@ -200,11 +179,10 @@
           </p>
         </div>
       </section>
-    </main>
-    <footer class="mainpage-footer">
-      <div class="mainpage-footer__wrapper">
-        <p class="mainpage-footer__intro slogan">Остались вопросы? Свяжитесь с нами!</p>
-        <div class="mainpage-footer__contacts contacts">
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <div class="contacts__wrapper">
+          <p class="contacts__intro slogan">Остались вопросы? Свяжитесь с нами!</p>
           <ul class="contacts__list">
             <li class="contacts__item">
               <b class="contacts__text">Звоните:</b>
@@ -220,8 +198,36 @@
             </li>
           </ul>
         </div>
+        <div class="map"></div>
+      </section>
+    </main>
+    <footer class="page-footer page-footer--invisible">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image logo-image" src="http://placehold.it/80x30" width="80" height="30" alt="Pink">
+      </a>
+      <ul class="page-footer__list social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright-wrapper">
+        <b class="page-footer__copyright-text">Разработано:</b>
+        <a class="page-footer__copyright-link link-button" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML-Academy</span>
+        </a>
       </div>
-      <div class="map"></div>
     </footer>
   </body>
 </html>
