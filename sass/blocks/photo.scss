@@ -16,15 +16,15 @@
 .photo__author {
 }
 
-.photo {
-  &__time, &__like-text {
+.photo__time,
+.photo__like-text {
     font-size: 12px;
     font-weight: 300;
     text-transform: uppercase;
-  };
-  &__like-text {
-    color: $font-accent-color;
-  };
+}
+
+.photo__like-text {
+  color: $font-accent-color;
 }
 
 .photo__text {

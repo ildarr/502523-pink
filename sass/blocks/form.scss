@@ -21,11 +21,10 @@
   text-transform: uppercase;
 }
 
-.form {
-  &__input, &__label {
-    font-size: 18px;
-    line-height: 30px;
-  }
+.form__input,
+.form__label {
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .form__input {
@@ -57,26 +56,6 @@
 
   border: 2px solid $input-border-color;
   border-radius: 2px;
-}
-
-.button {
-  display: block;
-  width: 280px;
-  margin: 10px auto;
-  padding-top: 12px;
-  padding-bottom: 14px;
-
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
-  color: $font-init-color;
-  text-transform: uppercase;
-  text-align: center;
-
-  background-color: $button-main-color;
-  border-radius: 2px;
-  border: none;
-  box-sizing: border-box;
 }
 
 .form__wrapper-legend {
