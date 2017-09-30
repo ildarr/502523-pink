@@ -1,0 +1,16 @@
+.link-button {
+  display: block;
+  width: 280px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  color: $font-init-color;
+  text-align: center;
+
+  border: 3px solid $link-init-color;
+  border-radius: 50px;
+  box-sizing: border-box;
+}

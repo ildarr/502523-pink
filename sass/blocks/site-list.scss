@@ -1,0 +1,30 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list__item {
+  text-align: center;
+}
+
+.site-list__link {
+  display: block;
+  padding: 15px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  color: $font-init-color;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid $menu-init-color;
+  border-top: 1px solid $menu-border-top;
+  background-color: $menu-main-color;
+}
+
+.site-list__link--active {
+  border-top: 1px solid $menu-main-color;
+  border-bottom: 1px solid $menu-main-color;
+}

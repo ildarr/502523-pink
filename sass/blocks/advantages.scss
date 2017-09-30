@@ -1,0 +1,22 @@
+.advantages__list {
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantages__wrapper {
+  position: relative;
+
+  padding: 85px 20px 280px 20px;
+
+  text-align: center;
+
+  background: $section-main-color;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 80px 550px;
+}
+
+.advantages__item {
+  margin-bottom: 35px;
+}

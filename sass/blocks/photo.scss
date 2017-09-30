@@ -1,0 +1,39 @@
+.photo__image {
+  display: block;
+}
+
+.photo__post {
+  margin-bottom: 20px;
+  padding: 20px;
+
+  background-color: $section-main-color;
+}
+
+.photo__post--margin {
+  margin: 0 20px 0 20px;
+}
+
+.photo__time,
+.photo__like-text {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.photo__like-text {
+  color: $font-accent-color;
+}
+
+.photo__text {
+  margin: 0 0 5px 0;
+}
+
+.photo__list {
+  padding: 0;
+
+  list-style: none;
+}
+
+.photo__item {
+  padding: 0 20px 0 20px;
+}

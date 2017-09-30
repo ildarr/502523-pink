@@ -1,0 +1,28 @@
+.contacts__wrapper {
+  padding: 20px;
+
+  text-align: center;
+}
+
+.contacts__list {
+  padding: 0;
+
+  list-style: none;
+}
+
+.contacts__item {
+  padding-bottom: 20px;
+}
+
+.contacts__text {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts__value {
+  display: block;
+
+  font-size: 24px;
+  font-weight: 300;
+  color: $font-accent-color;
+}
