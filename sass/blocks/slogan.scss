@@ -4,3 +4,9 @@
   line-height: normal;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .slogan {
+    font-size: 40px;
+  }
+}

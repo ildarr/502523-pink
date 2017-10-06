@@ -4,17 +4,24 @@
   background-color: $header-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: -190px 260px;
+  background-position-x: -190px;
+  background-position-y: 0;
+}
+
+.page-header--position {
+  background-position-y: 259px;
 }
 
 .page-header--add-picture {
   position: relative;
+  z-index: 10;
 }
 
 .page-header--add-picture::before {
   content: "";
   position: absolute;
-  top: 435px;
+  top: 176px;
+  z-index: 20;
 
   display: block;
   width: 258px;
@@ -24,16 +31,37 @@
   background-repeat: no-repeat;
 }
 
-.page-header__wrapper {
+.page-header--add-picture-position::before {
+  top: 435px;
+}
+
+.page-header__logo-wrapper {
   display: flex;
   padding: 20px;
 
-  background-color: $menu-main-color;
+  background-color: $menu-header-color;
   border-bottom: 1px solid $menu-init-color;
 }
 
+.page-header__logo-wrapper--background {
+  background-color: $menu-main-color;
+}
+
 .page-header__toggle {
+  content: "";
+  width: 50px;
+  height: 30px;
   margin-left: auto;
+
+  background-image: url("../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+}
+
+.page-header__toggle--open {
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/icon-menu-cross.svg");
 }
 
 .page-header__title {
@@ -41,12 +69,49 @@
 
   font-size: 24px;
   font-weight: 300;
-  line-height: normal;
+  line-height: 30px;
   color: $font-init-color;
   text-align: center;
   vertical-align: middle;
 }
 
-.page-header__background-wrapper {
-  padding: 30px 20px;
+.page-header__title-wrapper {
+  padding: 30px 20px 50px 20px;
+}
+
+.page-header__title-wrapper--padding {
+  padding-bottom: 80px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    background-position-x: 0;
+    background-size: cover;
+  }
+  .page-header--add-picture::before {
+    left: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    padding: 20px 130px;
+    background-color: $menu-header-color;
+  }
+
+  .page-header__logo-wrapper {
+    padding: 0;
+    background-color: transparent;
+    border-bottom: none;
+  }
+
+  .page-header--add-picture::before {
+    left: 400px;
+  }
+
 }

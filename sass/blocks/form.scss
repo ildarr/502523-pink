@@ -1,5 +1,6 @@
 .form__chapter {
   padding: 20px;
+  border: none;
 }
 
 .form__chapter--background {
@@ -33,18 +34,20 @@
   margin-bottom: 10px;
   padding: 10px 20px;
 
-  border: 2px solid $input-border-color;
+  border: 2px solid $form-border-color;
   border-radius: 2px;
   box-sizing: border-box;
 }
 
 .form__legend {
+  padding: 0 25px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
+  color: $font-accent-color;
 }
 
-.form__note {
+.form__note-star {
   color: $font-accent-color;
 }
 
@@ -54,12 +57,145 @@
   font-size: 18px;
   line-height: 30px;
 
-  border: 2px solid $input-border-color;
+  border: 2px solid $form-border-color;
   border-radius: 2px;
 }
 
-.form__wrapper-legend {
-  padding: 20px;
+.form__button-wrapper {
+
 
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .form__chapter:nth-child(4) {
+    order: 2;
+  }
+
+  .form__chapter:nth-child(3) {
+    order: 3;
+  }
+
+  .form__chapter:nth-child(2) {
+    order: 4;
+  }
+
+  .form__chapter:nth-child(5) {
+    order: 5;
+  }
+
+
+  .form__chapter {
+    padding: 20px;
+    margin-bottom: 65px;
+
+    background-color: $section-init-color;
+    border: solid 2px $form-border-color;
+  }
+
+  .form__name .form__item {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .form__chapter:nth-child(3) .form__item {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+
+  .form__input {
+    width: 100%;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    align-items: center;
+    order: 6;
+  }
+
+  .form__button {
+    margin: 0;
+  }
+
+  .form__note {
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 435px;
+    justify-content: space-between;
+    align-content: space-between;
+
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .form__legend,
+  .form__label-input {
+    font-size: 14px;
+  }
+
+  .form__name,
+  .form__chapter:nth-child(4) {
+    width: 435px;
+    padding: 0;
+    margin: 60px 0;
+  }
+
+  .form__chapter:nth-child(4) .form__list {
+    padding: 50px 70px 15px 70px;
+  }
+
+  .form__chapter:nth-child(4) .form__item {
+    margin-bottom: 35px;
+  }
+
+  .form__chapter:nth-child(2),
+  .form__chapter:nth-child(3),
+  .form__chapter:nth-child(5),
+  .form__button-wrapper {
+    width: 100%;
+  }
+
+  .form__chapter:nth-child(3) .form__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__chapter:nth-child(3) .form__item {
+    width: 375px;
+  }
+
+  .form__chapter:nth-child(3) {
+    padding: 45px 60px 0px 60px;
+  }
+
+  .form__chapter:nth-child(2) .form__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__chapter:nth-child(2) {
+    padding: 30px 60px 30px 60px;
+  }
+
+  .form__chapter:nth-child(2) .form__item {
+    width: 260px;
+  }
 }

@@ -1,0 +1,29 @@
+.research {
+  display: none;
+  padding: 80px 20px 80px 330px;
+}
+
+.research__title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.research__link {
+  color: $link-accent-color;
+  text-decoration: underline;
+}
+
+@media (min-width: $tablet-width) {
+  .research {
+    display: block;
+    background-color: $section-main-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research {
+    padding-left: 500px;
+    padding-right: 130px;
+
+  }
+}

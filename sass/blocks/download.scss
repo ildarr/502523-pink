@@ -1,5 +1,13 @@
 .download {
+  position: relative;
+  z-index: 30;
+
+  margin-top: 396px;
   padding: 20px;
+}
+
+.download__title {
+  display: none;
 }
 
 .download__text {
@@ -8,4 +16,22 @@
   font-weight: 300;
   color: $font-init-color;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    width: 300px;
+    margin-top: 0px;
+    padding: 100px 20px;
+  }
+
+  .download__title {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    padding: 100px 130px;
+  }
 }

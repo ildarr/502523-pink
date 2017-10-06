@@ -28,3 +28,23 @@
   border-top: 1px solid $menu-main-color;
   border-bottom: 1px solid $menu-main-color;
 }
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  .site-list__link {
+    padding: 0;
+
+    font-weight: 400;
+    line-height: 18px;
+    color: $font-init-color;
+    text-transform: none;
+
+    border: none;
+    background-color: transparent;
+  }
+}

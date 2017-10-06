@@ -1,11 +1,9 @@
-.upload__wrapper {
+.upload {
   padding: 20px;
-
-  border-bottom: 1px solid $upload-border-color;
 }
 
-.upload__button-wrapper {
-  padding: 40px 20px;
+.upload__wrapper {
+  border-bottom: 1px solid $upload-border-color;
 }
 
 .upload__button {
@@ -21,4 +19,49 @@
   color: $link-accent-color;
 
   border-color: $link-accent-color;
+}
+
+@media (min-width: $tablet-width) {
+  .upload {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .upload__wrapper {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+
+  .upload__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+  }
+  .upload__button-wrapper {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .upload {
+    padding: 60px 70px;
+  }
+
+  .upload__wrapper {
+    width: 410px;
+  }
+
+  .upload__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .upload__button {
+    width: 183px;
+  }
 }

@@ -1,3 +1,9 @@
 .photo-upload {
   background-color: $section-main-color;
 }
+
+@media (min-width: $desktop-width) {
+  .photo-upload {
+    margin: 0 130px;
+  }
+}
