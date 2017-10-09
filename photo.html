@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-      <header class="page-header page-header--position">
-        <div class="page-header__wrapper">
-          <div class="page-header__logo-wrapper page-header__logo-wrapper--background">
-            <a class="page-header__logo">
+      <header class="page-header page-header--margin">
+        <div class="page-header__menu page-header__menu--position">
+          <div class="page-header__heading page-header__heading--background">
+            <a class="page-header__logo" href="index.html">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
                 <g>
                   <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
@@ -24,11 +26,11 @@
           </div>
           <nav class="main-nav main-nav--visible">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="index.html" class="site-list__link">Главная</a>
+              <li class="site-list__item site-list__item--active">
+                <a href="index.html" class="site-list__link site-list__link--active">Главная</a>
               </li>
               <li class="site-list__item">
-                <a href="photo.html" class="site-list__link site-list__link--active">Фотографии</a>
+                <a href="photo.html" class="site-list__link">Фотографии</a>
               </li>
               <li class="site-list__item">
                 <a href="form.html" class="site-list__link">Конкурс</a>
@@ -39,7 +41,7 @@
             </ul>
           </nav>
         </div>
-        <div class="page-header__title-wrapper page-header__title-wrapper--padding">
+        <div class="page-header__title-wrapper">
           <h1 class="page-header__title">Фотографии пользователей</h1>
         </div>
       </header>

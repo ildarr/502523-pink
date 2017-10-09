@@ -30,6 +30,7 @@
   .advantages__intro-question {
     margin: 50px 20px 0 20px;
   }
+
   .advantages__intro-suggest {
     margin: 0 20px 45px 20px;
   }
@@ -53,7 +54,7 @@
   }
 
   .advantages__wrapper {
-    padding: 0px 130px 10px 130px;
+    padding: 0 130px 10px 130px;
 
     background-image: none;
   }
@@ -67,7 +68,7 @@
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     background-position-x: 40px;
-    background-position-y: 0px;
+    background-position-y: 0;
   }
 
   .advantages__title {

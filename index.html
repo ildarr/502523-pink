@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="viewport" content="width=1440">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-      <header class="page-header page-header--position page-header--add-picture page-header--add-picture-position">
-        <div class="page-header__wrapper">
-          <div class="page-header__logo-wrapper page-header__logo-wrapper--background">
+      <header class="page-header page-header--margin">
+        <div class="page-header__menu page-header__menu--position">
+          <div class="page-header__heading page-header__heading--background">
             <a class="page-header__logo">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
                 <g>
@@ -43,29 +42,32 @@
           </nav>
         </div>
         <h1 class="visually-hidden">Приложение Pink</h1>
-        <section class="download">
-          <h2 class="visually-hidden">Загрузка приложения</h2>
-          <p class="download__title slogan">Взгляните на жизнь иначе!</p>
-          <a class="download__button link-button" href="https://www.apple.com/itunes">Скачать приложение</a>
-          <ul class="download__list market-list">
-            <li class="market-list__item">
-              <a class="market-list__link market-list__link--itunes" href="https://www.apple.com/itunes">
-                <span class="visually-hidden">iTunes</span>
-              </a>
-            </li>
-            <li class="market-list__item">
-              <a class="market-list__link market-list__link--android" href="https://play.google.com/store">
-                <span class="visually-hidden">Google Play</span>
-              </a>
-            </li>
-            <li class="market-list__item">
-              <a class="market-list__link market-list__link--microsoft" href="https://www.microsoft.com/store/apps/windows-phone">
-                <span class="visually-hidden">Windows Phone Store</span>
-              </a>
-            </li>
-          </ul>
-          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </section>
+        <div class="page-header__wrapper">
+          <div class="page-header__picture-wrapper"></div>
+          <section class="download">
+            <h2 class="visually-hidden">Загрузка приложения</h2>
+            <p class="download__title slogan">Взгляните на жизнь иначе!</p>
+            <a class="download__button link-button" href="https://www.apple.com/itunes">Скачать приложение</a>
+            <ul class="download__list market-list">
+              <li class="market-list__item">
+                <a class="market-list__link market-list__link--itunes" href="https://www.apple.com/itunes">
+                  <span class="visually-hidden">iTunes</span>
+                </a>
+              </li>
+              <li class="market-list__item">
+                <a class="market-list__link market-list__link--android" href="https://play.google.com/store">
+                  <span class="visually-hidden">Google Play</span>
+                </a>
+              </li>
+              <li class="market-list__item">
+                <a class="market-list__link market-list__link--microsoft" href="https://www.microsoft.com/store/apps/windows-phone">
+                  <span class="visually-hidden">Windows Phone Store</span>
+                </a>
+              </li>
+            </ul>
+            <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </section>
+        </div>
       </header>
       <main class="page-main">
         <section class="advantages">

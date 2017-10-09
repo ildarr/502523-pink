@@ -2,8 +2,9 @@
   position: relative;
   z-index: 30;
 
-  margin-top: 396px;
-  padding: 20px;
+  padding: 20px 0;
+
+  box-sizing: border-box;
 }
 
 .download__title {
@@ -20,18 +21,11 @@
 
 @media (min-width: $tablet-width) {
   .download {
-    width: 300px;
-    margin-top: 0px;
-    padding: 100px 20px;
+    width: 340px;
+    padding-top: 210px;
   }
 
   .download__title {
     display: block;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .download {
-    padding: 100px 130px;
   }
 }
