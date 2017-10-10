@@ -24,9 +24,12 @@
   background-color: $menu-main-color;
 }
 
-.site-list__link--active {
-  border-top: 1px solid $menu-main-color;
-  border-bottom: 1px solid $menu-main-color;
+.site-list__link:hover {
+  color: $link-accent-color;
+}
+
+.site-list__link:active {
+  color: $link-active-color;
 }
 
 @media (min-width: $desktop-width) {

@@ -1,7 +1,6 @@
 .page-header {
   position: relative;
 
-  padding: 0 20px;
   margin: 0;
 
   color: $font-init-color;
@@ -65,25 +64,15 @@
 
   width: 280px;
   min-height: 463px;
-}
-
-.page-header__picture-wrapper::before {
-  content: "";
-  position: absolute;
-  top: 176px;
-  left: -20px;
-
-  width: 258px;
-  height: 286px;
-  display: block;
 
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
+  background-position-y: 176px;
 }
 
 .page-header__title-wrapper {
   min-height: 237px;
-  padding-top: 100px;
+  padding: 100px 20px 0 20px;
 
   box-sizing: border-box;
 }
@@ -116,13 +105,7 @@
   }
 
   .page-header__picture-wrapper {
-    order: 2;
-    width: 320px;
-  }
-
-  .page-header__picture-wrapper::before {
-    top: 444px;
-    left: -150px;
+    display: none;
   }
 
   .page-header__title-wrapper {
@@ -169,6 +152,14 @@
     padding: 0;
     background-color: transparent;
     border-bottom: none;
+  }
+
+  .page-header__picture-wrapper {
+    order: 2;
+    display: block;
+    width: 640px;
+    background-position-y: 444px;
+    background-position-x: 0;
   }
 
   .page-header__title-wrapper {
