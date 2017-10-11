@@ -1,13 +1,14 @@
-@import "variables.scss";
-@import "fonts.scss";
+@import "units/variables.scss";
+@import "units/fonts.scss";
+@import "units/global.scss";
+@import "blocks/container.scss";
 @import "blocks/advantages.scss";
+@import "blocks/break-row.scss";
 @import "blocks/button.scss";
 @import "blocks/contacts.scss";
-@import "blocks/container.scss";
 @import "blocks/controls.scss";
 @import "blocks/download.scss";
 @import "blocks/form.scss";
-@import "blocks/global.scss";
 @import "blocks/link-button.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/map.scss";
@@ -19,6 +20,7 @@
 @import "blocks/photo.scss";
 @import "blocks/popup.scss";
 @import "blocks/price.scss";
+@import "blocks/research.scss";
 @import "blocks/reviews.scss";
 @import "blocks/site-list.scss";
 @import "blocks/slider.scss";

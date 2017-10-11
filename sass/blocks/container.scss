@@ -4,3 +4,15 @@
 
   background-color: $section-init-color;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: $desktop-width;
+  }
+}

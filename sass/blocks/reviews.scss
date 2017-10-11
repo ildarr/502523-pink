@@ -11,3 +11,24 @@
   font-weight: 700;
   font-style: normal;
 }
+
+.reviews__author-information {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    order: -1;
+  }
+
+  .reviews__author-information {
+    display: inline;
+    font-size: 14px;
+  }
+}

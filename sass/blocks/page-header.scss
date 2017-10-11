@@ -1,39 +1,80 @@
 .page-header {
+  position: relative;
+
+  margin: 0;
+
   color: $font-init-color;
 
   background-color: $header-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: -190px 260px;
+  background-position-x: center;
 }
 
-.page-header--add-picture {
-  position: relative;
+.page-header--margin {
+  margin-top: 260px;
 }
 
-.page-header--add-picture::before {
-  content: "";
+.page-header__menu {
   position: absolute;
-  top: 435px;
-
-  display: block;
-  width: 258px;
-  height: 286px;
-
-  background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+  z-index: 20;
 }
 
-.page-header__wrapper {
+.page-header__menu--position {
+  top: -260px;
+}
+
+.page-header__heading {
   display: flex;
+  justify-content: space-between;
+  width: 320px;
   padding: 20px;
 
-  background-color: $menu-main-color;
+  background-color: $menu-header-color;
   border-bottom: 1px solid $menu-init-color;
+
+  box-sizing: border-box;
+}
+
+.page-header__heading--background {
+  background-color: $menu-main-color;
 }
 
 .page-header__toggle {
+  content: "";
+  width: 50px;
+  height: 30px;
   margin-left: auto;
+
+  background-image: url("../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+}
+
+.page-header__toggle--open {
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/icon-menu-cross.svg");
+}
+
+.page-header__picture-wrapper {
+  position: relative;
+
+  width: 280px;
+  min-height: 463px;
+
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position-y: 176px;
+}
+
+.page-header__title-wrapper {
+  min-height: 237px;
+  padding: 100px 20px 0 20px;
+
+  box-sizing: border-box;
 }
 
 .page-header__title {
@@ -41,12 +82,88 @@
 
   font-size: 24px;
   font-weight: 300;
-  line-height: normal;
+  line-height: 30px;
   color: $font-init-color;
   text-align: center;
   vertical-align: middle;
 }
 
-.page-header__background-wrapper {
-  padding: 30px 20px;
+@media (min-width: $tablet-width) {
+  .page-header__heading {
+    width: 660px;
+  }
+
+  .page-header {
+    background-position-x: center;
+    background-size: cover;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 730px;
+  }
+
+  .page-header__picture-wrapper {
+    display: none;
+  }
+
+  .page-header__title-wrapper {
+    min-height: 440px;
+    padding-top: 190px;
+  }
+
+  .page-header__title {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding: 0 130px;
+  }
+
+  .page-header--margin {
+    margin-top: 0;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__menu {
+    left: 0;
+
+    display: flex;
+    width: 1200px;
+    padding: 20px 130px;
+    background-color: $menu-header-color;
+
+    box-sizing: border-box;
+  }
+
+  .page-header__menu--position {
+    top: 0;
+  }
+
+  .page-header__heading {
+    padding: 0;
+    background-color: transparent;
+    border-bottom: none;
+  }
+
+  .page-header__picture-wrapper {
+    order: 2;
+    display: block;
+    width: 640px;
+    background-position-y: 444px;
+    background-position-x: 0;
+  }
+
+  .page-header__title-wrapper {
+    min-height: 394px;
+    padding-top: 180px;
+  }
 }

@@ -1,0 +1,9 @@
+.break-row {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .break-row {
+    display: none;
+  }
+}
