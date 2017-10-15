@@ -1,7 +1,7 @@
 .price {
   position: relative;
 
-  padding: 90px 0 45px 0;
+  padding: 89px 0 45px 0;
 
   background-color: $section-main-color;
 }
@@ -18,15 +18,21 @@
   border-collapse: collapse;
 }
 
+.price__aside,
+.price__aside-head {
+  display: none;
+}
+
 .price__head {
-  padding: 21px 0;
+  padding: 16px 0 21px 0;
 
   background-color: $table-header-color;
-  border: 2px solid #e5e5e5;
 }
 
 .price__name {
   display: block;
+  margin-bottom: 1px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;

@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", function (evt) {
   page_header_heading.classList.remove("page-header__heading--background");
   page_header_menu.classList.remove("page-header__menu--position");
   page_header.classList.remove("page-header--position");
-  page_header_inner.classList.remove("page-header--inner-position");
+  if (page_header_inner) {
+    page_header_inner.classList.remove("page-header--inner-position");
+  }
   toggle_button.classList.remove("page-header__toggle--open");
 });
 
@@ -21,6 +23,8 @@ toggle_button.addEventListener("click", function (evt) {
   page_header_heading.classList.toggle("page-header__heading--background");
   page_header_menu.classList.toggle("page-header__menu--position");
   page_header.classList.toggle("page-header--position");
-  page_header_inner.classList.toggle("page-header--inner-position");
+  if (page_header_inner) {
+    page_header_inner.classList.toggle("page-header--inner-position");
+  }
   toggle_button.classList.toggle("page-header__toggle--open");
 });
