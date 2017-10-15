@@ -28,21 +28,21 @@
   cursor: pointer;
 }
 
-#btn-1:checked ~ .slider__controls label[for="btn-1"],
-#btn-2:checked ~ .slider__controls label[for="btn-2"],
-#btn-3:checked ~ .slider__controls label[for="btn-3"] {
-    border: 3px solid $slider-border-color;
-    background-color: $section-initial-color;
+.slider__toggle:nth-child(1):checked ~ .slider__controls label[for="btn-1"],
+.slider__toggle:nth-child(2):checked ~ .slider__controls label[for="btn-2"],
+.slider__toggle:nth-child(3):checked ~ .slider__controls label[for="btn-3"] {
+  border: 3px solid $slider-border-color;
+  background-color: $section-initial-color;
 }
 
-#btn-1:checked ~ .slider .slider__list {
+.slider__toggle:nth-child(1):checked ~ .slider .slider__list {
   transform: translate(0);
 }
 
-#btn-2:checked ~ .slider .slider__list {
+.slider__toggle:nth-child(2):checked ~ .slider .slider__list {
   transform: translate(-280px);
 }
 
-#btn-3:checked ~ .slider .slider__list {
+.slider__toggle:nth-child(3):checked ~ .slider .slider__list {
   transform: translate(-560px);
 }
