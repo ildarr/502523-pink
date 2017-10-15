@@ -1,10 +1,9 @@
 .market-list {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   flex-wrap: wrap;
-  width: 180px;
-  margin: 0 auto;
-  padding: 30px 0;
+  width: 206px;
 
   list-style: none;
 }
@@ -42,6 +41,7 @@
   display: block;
   width: 44px;
   height: 42px;
+
 
   background-image: url("../img/logo-microsoft.svg");
   background-repeat: no-repeat;

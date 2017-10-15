@@ -1,25 +1,52 @@
+.advantages {
+  padding-top: 40px;
+}
+
 .advantages__list {
   padding: 0;
+  margin: 0;
 
   list-style: none;
+}
+
+.advantages__intro-question {
+  margin: 0 auto;
+  margin-bottom: 27px;
+}
+
+.advantages__intro-suggest {
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .advantages__wrapper {
   position: relative;
 
-  padding: 85px 20px 280px 20px;
+  padding: 81px 20px 287px 20px;
 
   text-align: center;
 
   background: $section-main-color;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position-x: 80px;
-  background-position-y: 565px;
+  background-position-x: 83px;
+  background-position-y: 508px;
+}
+
+.advantages__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.advantages__description {
+  margin: 0;
 }
 
 .advantages__item {
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 
 @media (min-width: $tablet-width) {

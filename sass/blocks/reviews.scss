@@ -1,12 +1,27 @@
+.reviews {
+  position: relative;
+  padding: 42px 20px 87px 20px;
+}
+
 .reviews__item {
+  width: 320px;
   margin: 0;
-  padding: 50px 20px;
+  padding: 0;
 
   line-height: 30px;
   text-align: center;
+  box-sizing: border-box;
+}
+
+.reviews__controls {
+  bottom: 35px;
+  left: 123px;
 }
 
 .reviews__author-name {
+  display: block;
+  margin-bottom: 13px;
+
   font-size: 18px;
   font-weight: 700;
   font-style: normal;
@@ -16,6 +31,9 @@
   display: none;
 }
 
+.reviews__text {
+  margin: 0;
+}
 @media (min-width: $tablet-width) {
   .reviews__item {
     display: flex;
