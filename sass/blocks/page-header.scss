@@ -222,6 +222,7 @@
   .page-header__menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     width: 1200px;
     padding: 0 130px;
@@ -232,9 +233,11 @@
   }
 
   .page-header__heading {
-    background-color: transparent;
+    width: 146px;
     padding-left: 0;
-    padding-right: 40px;
+    padding-right: 0;
+
+    background-color: transparent;
   }
 
   .page-header--inner {
