@@ -69,7 +69,7 @@
 }
 
 .reviews__toggle:nth-child(1):checked ~ .reviews__slider .reviews__list {
-  transform: translate(0px);
+  transform: translate(0);
 }
 
 .reviews__toggle:nth-child(2):checked ~ .reviews__slider .reviews__list {
@@ -116,7 +116,7 @@
   .reviews__author-information {
     display: inline;
     font-size: 14px;
-    line-height: 30px
+    line-height: 30px;
   }
 
   .reviews__controls {
@@ -125,7 +125,7 @@
   }
 
   .reviews__toggle:nth-child(1):checked ~ .reviews__slider .reviews__list {
-    transform: translate(0px);
+    transform: translate(0);
   }
 
   .reviews__toggle:nth-child(2):checked ~ .reviews__slider .reviews__list {
@@ -209,6 +209,8 @@
     height: 2px;
 
     background-color: $slider-arrows-color;
+
+    transform: rotate(-45deg);
   }
 
   .reviews__button-left::after {
@@ -221,13 +223,7 @@
     height: 2px;
 
     background-color: $slider-arrows-color;
-  }
 
-  .reviews__button-left::before {
-    transform: rotate(-45deg);
-  }
-
-  .reviews__button-left::after {
     transform: rotate(45deg);
   }
 
@@ -251,6 +247,8 @@
     height: 2px;
 
     background-color: $slider-arrows-color;
+
+    transform: rotate(45deg);
   }
 
   .reviews__button-right::after {
@@ -263,13 +261,7 @@
     height: 2px;
 
     background-color: $slider-arrows-color;
-  }
 
-  .reviews__button-right::before {
-    transform: rotate(45deg);
-  }
-
-  .reviews__button-right::after {
     transform: rotate(-45deg);
   }
 

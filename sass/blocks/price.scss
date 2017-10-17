@@ -144,7 +144,7 @@
 
 @media (min-width: $tablet-width) {
   .price {
-    padding: 87px 0px 70px 0px;
+    padding: 87px 0 70px 0;
   }
 
   .price__wrapper {
@@ -210,7 +210,7 @@
 
 @media (min-width: $desktop-width) {
   .price {
-    padding: 148px 0px 95px 0px;
+    padding: 148px 0 95px 0;
   }
 
   .price__head {
