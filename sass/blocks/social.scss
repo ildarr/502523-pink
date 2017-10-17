@@ -2,9 +2,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 180px;
-  margin: 0 auto;
-  padding: 30px 0;
+  width: 177px;
+  padding: 10px 0;
 
   list-style: none;
 }
@@ -13,12 +12,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 46px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
 
   border-radius: 50%;
   border: 3px solid $social-border-color;
   fill: $accent-color;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding-top: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 /*.social__link--facebook {
