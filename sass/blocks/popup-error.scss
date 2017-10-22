@@ -39,7 +39,7 @@
   display: block;
 }
 
-.popup-error:before {
+.popup-error::before {
   content: "";
   position: fixed;
   background-color: transparent;

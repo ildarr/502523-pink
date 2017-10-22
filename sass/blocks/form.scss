@@ -95,7 +95,7 @@
 
   position: absolute;
   top: -4px;
-  left: 0px;
+  left: 0;
 
   width: 35px;
   height: 35px;
@@ -156,7 +156,7 @@
 
   position: absolute;
   top: -4px;
-  left: 0px;
+  left: 0;
 
   width: 35px;
   height: 35px;
@@ -185,7 +185,7 @@
   background-color: $pink;
   border: 10px solid white;
   border-radius: 50%;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 }
 
 .form__chapter:nth-child(4) .form__item {
@@ -266,6 +266,8 @@
 
   .form__chapter:nth-child(5) {
     order: 5;
+    padding: 37px 58px 43px 58px;
+    margin-bottom: 67px;
   }
 
   .form__chapter {
@@ -334,6 +336,8 @@
 
   .form__chapter:nth-child(3) .form__legend {
     width: 260px;
+    padding: 0;
+    display: block;
   }
 
   .form__chapter:nth-child(4) .form__legend {
@@ -349,16 +353,10 @@
     padding-left: 60px;
   }
 
-
   .form__chapter:nth-child(3) .form__item {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 24px;
-  }
-
-  .form__chapter:nth-child(3) .form__legend {
-    padding: 0;
-    display: block;
   }
 
   .form__chapter:nth-child(3) .form__list {
@@ -372,11 +370,6 @@
 
   .form__chapter:nth-child(2) .form__list {
     padding-bottom: 53px;
-  }
-
-  .form__chapter:nth-child(5) {
-    padding: 37px 58px 43px 58px;
-    margin-bottom: 67px;
   }
 
   .form__textarea {
