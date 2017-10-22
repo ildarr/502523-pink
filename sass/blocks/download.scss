@@ -12,6 +12,22 @@
 .download__button {
   width: 281px;
   margin-bottom: 30px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.download__button:hover {
+  color: $link-accent-color;
+
+  background-color: $link-initial-color;
+}
+
+.download__button:active {
+  color: $link-download-active;
+
+  background-color: $link-initial-color;
 }
 
 .download__list {
@@ -71,6 +87,10 @@
 
   .download__button {
     margin-bottom: 65px;
+
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 18px;
   }
 
   .download__list {

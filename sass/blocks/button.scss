@@ -1,9 +1,9 @@
 .button {
   display: block;
   width: 280px;
-  margin: 10px auto;
-  padding-top: 12px;
-  padding-bottom: 14px;
+  margin: 0 auto;
+  padding-top: 17px;
+  padding-bottom: 16px;
 
   font-size: 18px;
   font-weight: 700;
@@ -16,4 +16,17 @@
   border-radius: 2px;
   border: none;
   box-sizing: border-box;
+}
+
+.button:hover {
+  background-color: $button-hover-color;
+}
+
+.button:active {
+  background-color: $button-hover-color;
+  color: $button-active-font;
+}
+
+.button:disabled {
+  background-color: $button-disabled-color;
 }

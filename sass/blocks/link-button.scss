@@ -3,19 +3,10 @@
   padding-top: 14px;
   padding-bottom: 17px;
 
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
   color: $font-initial-color;
   text-align: center;
 
   border: 3px solid $link-initial-color;
   border-radius: 50px;
   box-sizing: border-box;
-}
-
-@media (min-width: $desktop-width) {
-  .link-button {
-    font-size: 21px;
-  }
 }

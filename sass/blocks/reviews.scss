@@ -61,6 +61,14 @@
   cursor: pointer;
 }
 
+.reviews__label:hover {
+  background-color: $slider-circle-hover;
+}
+
+.reviews__label:active {
+  background-color: $slider-circle-active;
+}
+
 .reviews__toggle:nth-child(1):checked ~ .reviews__controls label[for="reviwes-petrov"],
 .reviews__toggle:nth-child(2):checked ~ .reviews__controls label[for="reviwes-maizel"],
 .reviews__toggle:nth-child(3):checked ~ .reviews__controls label[for="reviwes-korbain"] {
@@ -141,7 +149,7 @@
   .reviews {
     display: flex;
     width: 940px;
-    padding: 185px 130px 41px 130px;
+    padding: 185px 130px 42px 130px;
   }
 
   .reviews__list {

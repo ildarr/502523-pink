@@ -9,57 +9,59 @@
   </head>
   <body>
     <div class="container">
-      <header class="page-header page-header--position">
-        <div class="page-header__menu page-header__menu--position">
-          <div class="page-header__heading page-header__heading--background">
-            <a class="page-header__logo-link">
-              <span class="visually-hidden">Логотип Пинк</span>
-              <span class="page-header__logo-image"></span>
-            </a>
-            <button class="page-header__toggle page-header__toggle--open" type="button" aria-label="Открыть меню"></button>
+      <div class="container__header">
+        <header class="page-header page-header--position">
+          <div class="page-header__menu page-header__menu--position">
+            <div class="page-header__heading page-header__heading--background">
+              <a class="page-header__logo-link">
+                <span class="visually-hidden">Логотип Пинк</span>
+                <span class="page-header__logo-image"></span>
+              </a>
+              <button class="page-header__toggle page-header__toggle--open" type="button" aria-label="Открыть меню"></button>
+            </div>
+            <nav class="main-nav main-nav--visible">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a class="site-list__link site-list__link--active">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="photo.html" class="site-list__link">Фотографии</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="form.html" class="site-list__link">Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#" class="site-list__link">HTML Academy</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="main-nav main-nav--visible">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--active">Главная</a>
+          <h1 class="visually-hidden">Приложение Pink</h1>
+          <section class="download">
+            <h2 class="visually-hidden">Загрузка приложения</h2>
+            <p class="download__title slogan">Взгляните на жизнь иначе!</p>
+            <a class="download__button link-button" href="https://www.apple.com/itunes">Скачать приложение</a>
+            <ul class="download__list market-list">
+              <li class="market-list__item">
+                <a class="market-list__link market-list__link--itunes" href="https://www.apple.com/itunes">
+                  <span class="visually-hidden">iTunes</span>
+                </a>
               </li>
-              <li class="site-list__item">
-                <a href="photo.html" class="site-list__link">Фотографии</a>
+              <li class="market-list__item">
+                <a class="market-list__link market-list__link--android" href="https://play.google.com/store">
+                  <span class="visually-hidden">Google Play</span>
+                </a>
               </li>
-              <li class="site-list__item">
-                <a href="form.html" class="site-list__link">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#" class="site-list__link">HTML Academy</a>
+              <li class="market-list__item">
+                <a class="market-list__link market-list__link--microsoft" href="https://www.microsoft.com/store/apps/windows-phone">
+                  <span class="visually-hidden">Windows Phone Store</span>
+                </a>
               </li>
             </ul>
-          </nav>
-        </div>
-        <h1 class="visually-hidden">Приложение Pink</h1>
-        <section class="download">
-          <h2 class="visually-hidden">Загрузка приложения</h2>
-          <p class="download__title slogan">Взгляните на жизнь иначе!</p>
-          <a class="download__button link-button" href="https://www.apple.com/itunes">Скачать приложение</a>
-          <ul class="download__list market-list">
-            <li class="market-list__item">
-              <a class="market-list__link market-list__link--itunes" href="https://www.apple.com/itunes">
-                <span class="visually-hidden">iTunes</span>
-              </a>
-            </li>
-            <li class="market-list__item">
-              <a class="market-list__link market-list__link--android" href="https://play.google.com/store">
-                <span class="visually-hidden">Google Play</span>
-              </a>
-            </li>
-            <li class="market-list__item">
-              <a class="market-list__link market-list__link--microsoft" href="https://www.microsoft.com/store/apps/windows-phone">
-                <span class="visually-hidden">Windows Phone Store</span>
-              </a>
-            </li>
-          </ul>
-          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </section>
-      </header>
+            <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </section>
+        </header>
+      </div>
       <main class="page-main">
         <section class="advantages">
           <h2 class="visually-hidden">Характеристики приложения</h2>
@@ -154,8 +156,11 @@
                     <span class="price__value">1,99 USD</span>
                   </th>
                   <th class="price__head">
-                    <span class="price__name">Стандарт</span>
-                    <span class="price__value">3,99 USD</span>
+                    <div class="price__head-wrapper">
+                      <span class="price__sticker">Хит</span>
+                      <span class="price__name">Стандарт</span>
+                      <span class="price__value">3,99 USD</span>
+                    </div>
                   </th>
                   <th class="price__head">
                     <span class="price__name">Анлим</span>

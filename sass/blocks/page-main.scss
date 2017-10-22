@@ -1,10 +1,71 @@
-.page-main__intro {
-  margin: 40px 20px 0 20px;
-
-  line-height: 30px;
-  text-align: center;
+.page-main__photo-preface {
+  margin-top: 45px;
+  margin-bottom: 49px;
+  padding: 0 35px;
 }
 
-.page-main__intro--margin {
-  margin: 40px 35px;
+.page-main__upload-preface {
+  margin-top: 40px;
+  margin-bottom: 42px;
+  padding: 0 30px;
+}
+
+.page-main__form-preface {
+  margin-top: 45px;
+  margin-bottom: 34px;
+  padding: 0 20px;
+}
+
+.page-main__form-suggest {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+.page-main__photo-preface {
+    margin-top: 92px;
+    margin-bottom: 76px;
+    padding: 0 75px;
+    font-size: 18px;
+  }
+
+  .page-main__upload-preface {
+    margin-top: 45px;
+    margin-bottom: 69px;
+    padding: 0 30px;
+  }
+
+.page-main__form-preface {
+    margin-top: 92px;
+    margin-bottom: 71px;
+    padding: 0 75px;
+  }
+
+.page-main__form-suggest {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__photo-preface {
+      margin-top: 92px;
+      margin-bottom: 88px;
+      padding: 0 300px;
+      font-size: 18px;
+    }
+
+    .page-main__upload-preface {
+      margin-top: 5px;
+      margin-bottom: 66px;
+      padding: 0 30px;
+    }
+
+  .page-main__form-preface {
+      margin-top: 92px;
+      margin-bottom: 71px;
+      padding: 0 200px;
+    }
+
+  .page-main__form-suggest {
+      display: inline;
+    }
 }
