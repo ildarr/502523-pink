@@ -1,0 +1,11 @@
+.slogan-inner {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .slogan-inner {
+    font-size: 18px;
+  }
+}

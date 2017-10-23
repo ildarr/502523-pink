@@ -1,15 +1,12 @@
 .link-button {
   display: block;
-  padding-top: 12px;
-  padding-bottom: 14px;
+  padding-top: 14px;
+  padding-bottom: 17px;
 
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 28px;
-  color: $font-init-color;
+  color: $font-initial-color;
   text-align: center;
 
-  border: 3px solid $link-init-color;
+  border: 3px solid $link-initial-color;
   border-radius: 50px;
   box-sizing: border-box;
 }

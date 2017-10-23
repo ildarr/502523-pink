@@ -1,41 +1,81 @@
+.advantages {
+  padding-top: 40px;
+}
+
 .advantages__list {
   padding: 0;
+  margin: 0;
 
   list-style: none;
+}
+
+.advantages__intro-question {
+  margin: 0 auto;
+  margin-bottom: 27px;
+}
+
+.advantages__intro-suggest {
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .advantages__wrapper {
   position: relative;
 
-  padding: 85px 20px 280px 20px;
+  padding: 81px 20px 287px 20px;
 
   text-align: center;
 
   background: $section-main-color;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position-x: 80px;
-  background-position-y: 565px;
+  background-position-x: 83px;
+  background-position-y: 508px;
+}
+
+.advantages__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.advantages__description {
+  margin: 0;
 }
 
 .advantages__item {
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    padding-top: 50px;
+  }
+
+
   .advantages__intro-question {
-    margin: 50px 20px 0 20px;
+    margin: 0 auto;
   }
 
   .advantages__intro-suggest {
-    margin: 0 20px 45px 20px;
+    padding: 0 150px;
+    margin-bottom: 47px;
   }
 
   .advantages__wrapper {
-    padding-left: 330px;
-    padding-bottom: 10px;
+    padding: 73px 20px 10px 330px;
     text-align: left;
     background-position-y: 150px;
+  }
+
+  .advantages__item:nth-child(1) {
+    margin-bottom: 34px;
+  }
+
+  .advantages__item:nth-child(2) {
+    margin-bottom: 35px;
   }
 
   .advantages__br {
@@ -44,9 +84,21 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    padding-top: 67px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .advantages__intro-suggest {
+    padding: 0 380px;
+    margin-bottom: 79px;
+  }
+
   .advantages__list {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   .advantages__wrapper {
@@ -57,7 +109,7 @@
 
   .advantages__item {
     width: 240px;
-    padding-top: 300px;
+    padding-top: 355px;
 
     text-align: center;
 
@@ -67,7 +119,20 @@
     background-position-y: 0;
   }
 
+  .advantages__item:nth-child(1) {
+    margin-left: 30px;
+  }
+
+  .advantages__item:nth-child(2) {
+    margin-left: 80px;
+  }
+
+  .advantages__item:nth-child(3) {
+    margin-left: 80px;
+  }
+
   .advantages__title {
     font-size: 30px;
+    margin-bottom: 23px;
   }
 }

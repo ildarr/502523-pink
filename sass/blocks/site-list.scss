@@ -16,38 +16,54 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
-  color: $font-init-color;
+  color: $font-initial-color;
   text-transform: uppercase;
 
-  border-bottom: 1px solid $menu-init-color;
+  border-bottom: 1px solid $menu-border-bottom;
   border-top: 1px solid $menu-border-top;
   background-color: $menu-main-color;
 }
 
-.site-list__link:hover {
-  color: $link-accent-color;
+.site-list__link[href]:hover {
+  color: $menu-hover-color;
 }
 
-.site-list__link:active {
-  color: $link-active-color;
+.site-list__link[href]:active {
+  color: $menu-active-color;
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
     display: flex;
-    justify-content: space-between;
-    width: 620px;
+    flex-wrap: wrap;
   }
 
   .site-list__link {
-    padding: 0;
+    padding: 15px 0;
+    margin-left: 80px;
 
     font-weight: 400;
     line-height: 18px;
-    color: $font-init-color;
+    color: $font-initial-color;
     text-transform: none;
 
     border: none;
     background-color: transparent;
+  }
+
+  .site-list__link--active {
+    position: relative;
+  }
+
+  .site-list__link--active::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+
+    height: 2px;
+
+    background-color: $menu-initial-color;
   }
 }

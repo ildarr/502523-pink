@@ -9,28 +9,22 @@
   </head>
   <body>
     <div class="container">
-      <header class="page-header page-header--margin">
-        <div class="page-header__menu page-header__menu--position">
+      <header class="page-header page-header--position page-header--inner">
+        <div class="page-header__menu page-header__menu--position page-header__menu--inner">
           <div class="page-header__heading page-header__heading--background">
-            <a class="page-header__logo" href="index.html">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
-                <g>
-                  <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
-                  <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
-                  <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
-                  <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
-                </g>
-              </svg>
+            <a class="page-header__logo-link" href="index.html">
+              <span class="visually-hidden">Логотип Пинк</span>
+              <span class="page-header__logo-image"></span>
             </a>
-            <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+            <button class="page-header__toggle page-header__toggle--open" type="button" aria-label="Открыть меню"></button>
           </div>
           <nav class="main-nav main-nav--visible">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a href="index.html" class="site-list__link site-list__link--active">Главная</a>
+              <li class="site-list__item">
+                <a href="index.html" class="site-list__link">Главная</a>
               </li>
               <li class="site-list__item">
-                <a href="photo.html" class="site-list__link">Фотографии</a>
+                <a class="site-list__link site-list__link--active">Фотографии</a>
               </li>
               <li class="site-list__item">
                 <a href="form.html" class="site-list__link">Конкурс</a>
@@ -42,24 +36,25 @@
           </nav>
         </div>
         <div class="page-header__title-wrapper">
-          <h1 class="page-header__title">Фотографии пользователей</h1>
+          <h1 class="page-header__title">Фотографии<br>пользователей</h1>
         </div>
       </header>
       <main class="page-main">
+        <p class="page-main__photo-preface slogan-inner">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <section class="photo">
           <h2 class="visually-hidden">Ваши загруженные фото</h2>
-          <p class="page-main__intro page-main__intro--margin">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           <div class="photo__panorama">
             <div class=photo__image-wrapper>
               <a class="photo__link photo__link--size" href="#">
                 <img class="photo__image photo__image--size" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
               </a>
+              <span class="photo__sticker">Панорама дня</span>
             </div>
             <div class="photo__post photo__post--panorama">
               <b class="photo__author">
                 Анна
                 <span class="photo__time">
-                  &nbsp;(5 минут назад)
+                  (5 минут назад)
                 </span>
               </b>
               <p class="photo__text">Прыгать или нет?
@@ -80,7 +75,7 @@
                 <b class="photo__author">
                   Левон
                   <span class="photo__time">
-                    &nbsp;(5 часов назад)
+                    (5 часов назад)
                   </span>
                 </b>
                 <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -98,7 +93,7 @@
                 <b class="photo__author">
                   Антон
                   <span class="photo__time">
-                    &nbsp;(12 часов назад)
+                    (12 часов назад)
                   </span>
                 </b>
                 <p class="photo__text">Соседи будут рады!</p>
@@ -116,7 +111,7 @@
                 <b class="photo__author">
                   Борис
                   <span class="photo__time">
-                    &nbsp;(20 часов назад)
+                    (20 часов назад)
                   </span>
                 </b>
                 <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -134,7 +129,7 @@
                 <b class="photo__author">
                   Сергей
                   <span class="photo__time">
-                    &nbsp;(25 часов назад)
+                    (25 часов назад)
                   </span>
                 </b>
                 <p class="photo__text">Самая кубанская в мире!</p>
@@ -152,7 +147,7 @@
                 <b class="photo__author">
                   Максим
                   <span class="photo__time">
-                    &nbsp;(40 часов назад)
+                    (40 часов назад)
                   </span>
                 </b>
                 <p class="photo__text">Где снег-то?</p>
@@ -170,7 +165,7 @@
                 <b class="photo__author">
                   Надежда
                   <span class="photo__time">
-                    &nbsp;(45 часов назад)
+                    (45 часов назад)
                   </span>
                 </b>
                 <p class="photo__text">Всем GM и взаимные лайки!</p>
@@ -182,7 +177,7 @@
             </li>
           </ul>
         </section>
-        <p class="page-main__intro page-main__intro--margin">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="page-main__upload-preface slogan-inner">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
         <section class="photo-upload">
           <h2 class="visually-hidden">Загрузка фотографий</h2>
           <form class="upload" action="https://echo.htmlacademy.ru" method="post">
@@ -194,29 +189,31 @@
                 <li class="upload__item">
                   <input class="visually-hidden upload__input-radio" type="radio" name="filter" value="crop" id="crop" checked>
                   <label class="upload__label" for="crop"></label>
+                  <div class="upload__scale">
+                    <div class="upload__bar"></div>
+                    <div class="upload__toggle"></div>
+                  </div>
                 </li>
                 <li class="upload__item">
                   <input class="visually-hidden upload__input-radio" type="radio" name="filter" value="fill" id="fill">
                   <label class="upload__label" for="fill"></label>
+                  <div class="upload__scale">
+                    <div class="upload__bar"></div>
+                    <div class="upload__toggle"></div>
+                  </div>
                 </li>
                 <li class="upload__item">
                   <input class="visually-hidden upload__input-radio" type="radio" name="filter" value="contrast" id="contrast">
                   <label class="upload__label" for="contrast"></label>
+                  <div class="upload__scale">
+                    <div class="upload__bar"></div>
+                    <div class="upload__toggle"></div>
+                  </div>
                 </li>
               </ul>
-              <div class="upload_controls controls">
-                <div class="controls__scale controls__scale--crop controls__scale--visible">
-                  <div class="controls__bar controls__bar--crop controls__bar--visible"></div>
-                  <div class="controls__toggle controls__toggle--contrast controls__toggle--visible"></div>
-                </div>
-                <div class="controls__scale controls__scale--fill">
-                  <div class="controls__bar controls__bar--fill"></div>
-                  <div class="controls__toggle controls__toggle--fill"></div>
-                </div>
-                <div class="controls__scale controls__scale--contrast">
-                  <div class="controls__bar controls__bar--contrast"></div>
-                  <div class="controls__toggle controls__toggle--contrast"></div>
-                </div>
+              <div class="upload__scale-mobile">
+                <div class="upload__bar"></div>
+                <div class="upload__toggle"></div>
               </div>
               <div class="upload__button-wrapper">
                 <button class="upload__button upload__button--color link-button" type="submit">Запостить</button>
