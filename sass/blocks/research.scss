@@ -22,7 +22,7 @@
   color: $font-accent-color;
 }
 
-.research__chapter{
+.research__chapter {
   width: 320px;
   padding: 38px 10px 0 10px;
   box-sizing: border-box;
@@ -56,10 +56,10 @@
     display: flex;
     justify-content: space-between;
   }
+
   .research__time {
     display: block;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -102,7 +102,7 @@
     box-sizing: border-box;
   }
 
-  .research__chapter{
+  .research__chapter {
     width: 573px;
     padding: 92px 10px 0 0;
     box-sizing: border-box;

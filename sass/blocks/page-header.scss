@@ -14,7 +14,7 @@
   background-size: 258px auto, 700px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
   }
 }
 
@@ -138,7 +138,7 @@
   background-size: 700px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
 
