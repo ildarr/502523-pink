@@ -98,6 +98,7 @@
   background-repeat: no-repeat;
   width: 14px;
   height: 13px;
+  padding: 0;
 
   border: none;
 }
@@ -191,7 +192,7 @@
 
 @media (min-width: $desktop-width) {
   .photo__panorama .photo__image {
-    width: 1200px;
+    width: 100%;
     height: 506px;
   }
 
@@ -206,19 +207,23 @@
     justify-content: space-between;
     align-items: center;
 
+    width: 940px;
     padding-top: 24px;
     padding-left: 28px;
     padding-right: 30px;
     padding-bottom: 13px;
-    margin: 0 130px;
-  }
+    margin: 0 auto;
 
-  .photo__post--panorama {
-    margin: 0 130px;
+    box-sizing: border-box;
   }
 
   .photo__list {
-    padding: 0 130px;
+    width: $desktop-width;
+    padding: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-sizing: border-box;
   }
 
   .photo__item {

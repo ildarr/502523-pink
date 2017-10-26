@@ -4,6 +4,9 @@
 
 @media (min-width: $desktop-width) {
   .photo-upload {
-    margin: 0 130px;
+    width: 940px;
+    margin: 0 auto;
+
+    box-sizing: border-box;
   }
 }

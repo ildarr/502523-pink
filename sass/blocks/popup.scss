@@ -1,4 +1,4 @@
-.popup__container {
+ .popup__container {
   display: none;
   padding-top: 38px;
 
@@ -30,8 +30,8 @@
 .popup__container--visible {
   display: block;
   position: fixed;
-  top: 25%;
-  left: 15%;
+  top: 100px;
+  left: 0;
 
   width: 320px;
   z-index: 100;
@@ -58,8 +58,8 @@
 
 @media (min-width: $tablet-width) {
   .popup__container--visible {
-    top: 25%;
-    left: 27%;
+    top: 50px;
+    left: 100px;
 
     width: 460px;
     box-sizing: border-box;
@@ -88,8 +88,8 @@
 
 @media (min-width: $desktop-width) {
   .popup__container--visible {
-    top: 25%;
-    left: 20%;
+    top: 50px;
+    left: 90px;
 
     width: 780px;
     box-sizing: border-box;

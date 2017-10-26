@@ -11,11 +11,20 @@
   background-repeat: no-repeat;
   background-position-x: 0, center;
   background-position-y: 176px, 0;
+  background-size: 258px auto, 700px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .page-header--position {
   min-height: 992px;
-  background-position-y: 435px, 259px;
+  background-position-y: 435px, 257px;
+}
+
+.page-header__menu {
+  margin-bottom: 395px;
 }
 
 .page-header__heading {
@@ -41,7 +50,6 @@
   display: block;
   width: 74px;
   height: 23px;
-  background-image: url("../img/logo-pink-white-mobile.svg");
 }
 
 .page-header__toggle {
@@ -127,11 +135,16 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position-x: center;
   background-position-y: 0;
+  background-size: 700px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .page-header--inner-position {
   min-height: 496px;
-  background-position-y: 259px;
+  background-position-y: 257px;
 }
 
 .page-header__menu--inner {
@@ -165,34 +178,49 @@
 
   .page-header {
     min-height: 729px;
-    background-position-x: 200px, center;
-    background-position-y: 264px, 0;
-    background-size: 30em, cover;
+
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-position-x: -20px, center;
+    background-position-y: 184px, 0;
+    background-size: 700px auto, 1200px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .page-header__menu {
+    margin-bottom: 64px;
   }
 
   .page-header__logo-image {
     display: block;
     width: 146px;
-    height: 57px;
-    background-image: url("../img/logo-pink-header-mobile.svg");
-    background-repeat: no-repeat;
+    height: 40px;
+    padding-bottom: 17px;
   }
 
   .page-header--position {
     min-height: 984px;
-    background-position-y: 519px, 255px;
+    background-position-y: 439px, 255px;
   }
 
   .page-header--inner {
     min-height: 440px;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position-x: center;
     background-position-y: 0;
-    background-size: cover;
+    background-size: 1200px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .page-header--inner-position {
     min-height: 695px;
-    background-position-y: 259px;
+    background-position-y: 255px;
   }
 
   .page-header__menu--inner {
@@ -210,8 +238,14 @@
   .page-header {
     min-height: 853px;
 
-    background-position-x: 450px, center;
-    background-position-y: 264px, 0;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position-x: center;
+    background-position-y: 0;
+    background-size: 2650px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .page-header__toggle {
@@ -219,14 +253,18 @@
   }
 
   .page-header__menu {
+    background-color: $menu-header-color;
+    margin-bottom: 80px;
+  }
+
+  .page-header__menu-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    width: 1200px;
-    padding: 0 130px;
-
-    background-color: $menu-header-color;
+    width: $desktop-width;
+    padding: 0 10px;
+    margin: 0 auto;
 
     box-sizing: border-box;
   }
@@ -241,8 +279,15 @@
 
   .page-header--inner {
     min-height: 394px;
+
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position-x: center;
     background-position-y: 0;
+    background-size: 2650px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .page-header__menu--inner {
@@ -250,6 +295,11 @@
   }
 
   .page-header__title {
-    padding: 0 130px;
+    width: $desktop-width;
+    padding: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-sizing: border-box;
   }
 }

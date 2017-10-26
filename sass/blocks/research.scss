@@ -1,12 +1,37 @@
 .research {
   display: none;
-  padding: 97px 20px 83px 330px;
+  padding: 60px 20px 52px 20px;
+}
+
+.research__clock {
+  width: 240px;
+  height: 280px;
+  background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-position-x: 21px, 0;
+  background-position-y: 57px, 0;
+  background-size: 200px auto, 240px auto;
+}
+
+.research__time {
+  padding-left: 64px;
+  padding-top: 76px;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 150px;
+  color: $font-accent-color;
+}
+
+.research__chapter{
+  width: 320px;
+  padding: 38px 10px 0 10px;
+  box-sizing: border-box;
 }
 
 .research__title {
   margin: 0;
   margin-bottom: 10px;
-  padding-right: 70px;
+  padding-right: 100px;
 
   font-size: 30px;
   line-height: 36px;
@@ -15,7 +40,6 @@
 .research__description {
   margin: 0;
   margin-bottom: 10px;
-  padding-right: 10px;
 }
 
 .research__link {
@@ -27,19 +51,61 @@
   .research {
     display: block;
   }
+
+  .research__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .research__time {
+    display: block;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
   .research {
-    padding-top: 112px;
-    padding-left: 497px;
-    padding-right: 130px;
-    padding-bottom: 114px;
+    padding: 0;
+    background-color: $section-main-color;
+  }
+
+  .research__clock {
+    width: 300px;
+    height: 350px;
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position-x: 24px, 0;
+    background-position-y: 70px, 0;
+    background-size: 252px auto, 299px auto;
+  }
+
+  .research__time {
+    padding-left: 80px;
+    padding-top: 96px;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 187px;
+    color: $font-accent-color;
+  }
+
+  .research__container {
+    width: $desktop-width;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 63px;
+    margin-left: auto;
+    margin-right: auto;
 
     font-size: 18px;
     line-height: 30px;
 
-    background-color: $section-main-color;
+    box-sizing: border-box;
+  }
+
+  .research__chapter{
+    width: 573px;
+    padding: 92px 10px 0 0;
+    box-sizing: border-box;
   }
 
   .research__title {

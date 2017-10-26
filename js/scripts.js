@@ -15,6 +15,7 @@ var form_button = document.querySelector(".form__button");
 var first_name = document.querySelector("[name=first-name]");
 var last_name = document.querySelector("[name=last-name]");
 var mail = document.querySelector("[name=mail]");
+var map = document.querySelector(".map");
 
 document.addEventListener("DOMContentLoaded", function (evt) {
   evt.preventDefault();
@@ -24,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function (evt) {
   page_header.classList.remove("page-header--position");
   toggle_button.classList.remove("page-header__toggle--open");
   if (form) {
-    popup.classList.remove("popup--visible");
+/*    popup.classList.remove("popup--visible");
     popup_container.classList.remove("popup__container--visible");
     popup_error.classList.remove("popup-error--visible");
-    popup_error_container.classList.remove("popup-error__container--visible");
+    popup_error_container.classList.remove("popup-error__container--visible");*/
     page_header_inner.classList.remove("page-header--inner-position");
     first_name.classList.remove("form__input--error");
     last_name.classList.remove("form__input--error");
@@ -51,9 +52,9 @@ if (form) {
   form_button.addEventListener("click", function (evt) {
     if (!first_name.value || !last_name.value || !mail.value) {
       evt.preventDefault();
-      popup_error.classList.remove("popup-error--visible");
+/*      popup_error.classList.remove("popup-error--visible");
       popup_error_container.classList.remove("popup-error__container--visible");
-      popup_error.offsetWidth = popup_error.offsetWidth;
+      popup_error.offsetWidth = popup_error.offsetWidth;*/
       popup_error.classList.add("popup-error--visible");
       popup_error_container.classList.add("popup-error__container--visible");
       first_name.classList.add("form__input--error");
@@ -70,8 +71,8 @@ if (form) {
       }
     } else {
       evt.preventDefault();
-      popup.classList.toggle("popup--visible");
-      popup_container.classList.toggle("popup__container--visible");
+      popup.classList.add("popup--visible");
+      popup_container.classList.add("popup__container--visible");
       if (first_name.classList.contains("form__input--error")) {
         first_name.classList.remove("form__input--error");
       }
@@ -120,4 +121,23 @@ if (form) {
       }
     }
   });
+}
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(59.9387,30.3231)
+  };
+  var map = new google.maps.Map(document.getElementById("map-pink"), mapOptions);
+  var myLatLng = new google.maps.LatLng(59.9387,30.3231);
+  var marker = "../img/icon-map-marker.svg";
+  var beachMaker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    icon: marker
+  });
+}
+
+if (map) {
+  google.maps.event.addDomListener(window, "load", initialize);
 }
