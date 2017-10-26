@@ -44,6 +44,14 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    padding: 0;
+  }
+
+  .page-footer--invisible {
+    display: block;
+  }
+
+  .page-footer__container {
     display: flex;
     align-items: center;
 
@@ -72,10 +80,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
-    padding: 58px 118px 65px 130px;
+  .page-footer__container {
+    width: 960px;
+    padding: 58px 0 65px 10px;
+    margin: 0 auto;
 
     font-size: 18px;
+    box-sizing: border-box;
   }
 
   .page-footer__list {

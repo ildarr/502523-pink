@@ -1,5 +1,4 @@
 .download {
-  margin-top: auto;
   padding: 28px 20px 30px 19px;
 
   box-sizing: border-box;
@@ -75,9 +74,24 @@
 
 @media (min-width: $desktop-width) {
   .download {
-    padding-left: 130px;
-    padding-right: 770px;
+    width: $desktop-width;
+    padding-left: 10px;
+    padding-right: 650px;
     padding-bottom: 122px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position-x: 27px;
+    background-position-y: bottom;
+    background-size: 1050px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+    }
+
+    box-sizing: border-box;
   }
 
   .download__title {

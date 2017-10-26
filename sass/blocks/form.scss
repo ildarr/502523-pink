@@ -206,12 +206,13 @@
 }
 
 .form__textarea {
-  width: 236px;
+  width: 250px;
   height: 167px;
-  padding: 15px 20px;
+  padding: 15px 5px 15px 20px;
 
   font-size: 18px;
   line-height: 30px;
+  font-weight: 400;
 
   border: 2px solid $form-border-color;
   border-radius: 2px;
@@ -375,6 +376,9 @@
   .form__textarea {
     width: 455px;
     height: 160px;
+
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .form__button-wrapper {
@@ -408,8 +412,13 @@
 
     align-content: space-between;
 
-    padding-left: 130px;
-    padding-right: 130px;
+    width: $desktop-width;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-sizing: border-box;
   }
 
   .form__legend,
@@ -501,6 +510,9 @@
   .form__textarea {
     width: 776px;
     height: 94px;
+
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .form__button-wrapper {
