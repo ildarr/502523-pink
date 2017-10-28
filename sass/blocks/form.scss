@@ -42,11 +42,13 @@
   width: 280px;
   padding: 15px 5px 15px 20px;
 
+  font: inherit;
   font-size: 18px;
   line-height: 30px;
 
   border: 2px solid $form-border-color;
   border-radius: 2px;
+  outline: none;
   box-sizing: border-box;
 }
 
@@ -58,7 +60,8 @@
   border-color: $form-input-hover;
 }
 
-.form__input:active {
+.form__input:active,
+.form__input:focus {
   border-color: $form-input-active;
 }
 
@@ -210,9 +213,9 @@
   height: 167px;
   padding: 15px 5px 15px 20px;
 
+  font: inherit;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 400;
 
   border: 2px solid $form-border-color;
   border-radius: 2px;
@@ -369,16 +372,49 @@
     margin-bottom: 10px;
   }
 
+  .form__chapter:nth-child(3) .form__item:nth-child(1) {
+    position: relative;
+  }
+
+  .form__chapter:nth-child(3) .form__item:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+
+    width: 60px;
+    height: 59px;
+    background-color: $form-border-color;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+  }
+
+  .form__chapter:nth-child(3) .form__item:nth-child(2) {
+    position: relative;
+  }
+
+  .form__chapter:nth-child(3) .form__item:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+
+    width: 60px;
+    height: 59px;
+    background-color: $form-border-color;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 22px 23px;
+  }
+
   .form__chapter:nth-child(2) .form__list {
     padding-bottom: 53px;
   }
 
   .form__textarea {
-    width: 455px;
+    width: 471px;
     height: 160px;
-
-    font-size: 18px;
-    line-height: 30px;
   }
 
   .form__button-wrapper {
@@ -508,11 +544,8 @@
   }
 
   .form__textarea {
-    width: 776px;
+    width: 791px;
     height: 94px;
-
-    font-size: 18px;
-    line-height: 30px;
   }
 
   .form__button-wrapper {

@@ -72,7 +72,7 @@
     text-align: left;
 
     background-image: url("../img/iphone-screen-3-tablet@1x.png"), url("../img/bg-triangle-white.svg");
-    background-position-x: 20px, 0;
+    background-position-x: 20px, -5px;
     background-position-y: 3px, 0;
     background-size: 268px auto, $tablet-width auto;
 
@@ -115,7 +115,7 @@
   .advantages__container {
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
-    background-position-x: 0;
+    background-position-x: -7px;
     background-position-y: 0;
     background-size: 100% auto;
   }

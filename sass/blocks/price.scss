@@ -123,20 +123,26 @@
   vertical-align: middle;
 }
 
-.price__icon--check {
+.price__icon--yes {
   width: 22px;
   height: 16px;
-  background-image: url("../img/icon-yes.svg");
-  background-repeat: no-repeat;
-  background-size: 22px 16px;
 }
 
-.price__icon--cross {
+.price__icon--no {
   width: 27px;
   height: 27px;
-  background-image: url("../img/icon-no.svg");
-  background-repeat: no-repeat;
-  background-size: 27px 27px;
+}
+
+.price__image-yes {
+  width: 22px;
+  height: 16px;
+  fill: $icon-yes-color;
+}
+
+.price__image-no {
+  width: 27px;
+  height: 27px;
+  fill: $icon-no-color;
 }
 
 .price__toggle {
@@ -193,9 +199,7 @@
   .price {
     padding: 87px 0 70px 0;
 
-    background-image: url("../img/bg-triangle-white.svg");
-    background-repeat: no-repeat;
-    background-position-x: 0;
+    background-position-x: -5px;
     background-position-y: 0;
     background-size: $tablet-width auto;
   }
@@ -272,9 +276,7 @@
   .price {
     padding: 148px 0 95px 0;
 
-    background-image: url("../img/bg-triangle-white.svg");
-    background-repeat: no-repeat;
-    background-position-x: 0;
+    background-position-x: -7px;
     background-position-y: 0;
     background-size: 100% auto;
   }
