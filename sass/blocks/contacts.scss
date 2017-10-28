@@ -60,6 +60,16 @@
   color: $font-accent-color;
 }
 
+.contacts__item:nth-child(2) .contacts__value:hover {
+  color: $mail-link-hover;
+  text-decoration: underline;
+}
+
+.contacts__item:nth-child(2) .contacts__value:active {
+  color: $mail-link-active;
+  text-decoration: none;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__triangle {
     width: $tablet-width;
