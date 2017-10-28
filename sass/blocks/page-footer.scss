@@ -30,7 +30,7 @@
 
 .page-footer__logo-link:active .page-footer__image {
   fill: $logo-footer-color;
-  opacity: 0.3
+  opacity: 0.3;
 }
 
 .page-footer__image--desktop {
@@ -71,7 +71,7 @@
 
 .page-footer__copyright-link:active .page-footer__copyright-image {
   fill: $logo-footer-color;
-  opacity: 0.3
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -135,7 +135,7 @@
 
   .page-footer__logo-link:active .page-footer__image {
     fill: $logo-footer-color;
-    opacity: 0.3
+    opacity: 0.3;
   }
 
   .page-footer__list {
