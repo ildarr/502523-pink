@@ -50,16 +50,6 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("compress", function (cb) {
-   pump([
-         gulp.src("js/*.js"),
-         uglify(),
-         gulp.dest("build/js")
-     ],
-     cb
-   );
- });
-
 gulp.task("images", function () {
   return gulp.src("img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
