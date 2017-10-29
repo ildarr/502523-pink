@@ -22,9 +22,7 @@
 
 .photo__panorama {
   position: relative;
-  display: block;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 20px;
 }
 
 .photo__panorama::before {
@@ -53,10 +51,6 @@
   padding: 18px 20px 20px 18px;
 
   background-color: $section-main-color;
-}
-
-.photo__panorama {
-  margin-bottom: 20px;
 }
 
 .photo__panorama .photo__post {
