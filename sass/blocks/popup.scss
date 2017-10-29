@@ -5,7 +5,11 @@
   text-align: center;
   background-color: $section-initial-color;
   border-top: 2px solid $popup-border-top;
-  box-shadow: 0 10px 35px -10px #808080;
+  box-shadow: 0 10px 35px -10px $box-shadow;
+}
+
+.popup__container--error {
+  padding-bottom: 48px;
 }
 
 .popup__heading {
@@ -25,6 +29,10 @@
   margin: 0;
   margin-bottom: 31px;
   padding: 0 20px;
+}
+
+.popup__text--error {
+  margin-bottom: 38px;
 }
 
 .popup__container--visible {
@@ -95,12 +103,21 @@
     box-sizing: border-box;
   }
 
+  .popup__container--error-visible {
+    width: 460px;
+    left: 33%;
+  }
+
   .popup__heading {
     padding: 0 180px;
 
     font-size: 30px;
     font-weight: 700;
     line-height: 40px;
+  }
+
+  .popup__heading--error {
+    padding: 0 100px;
   }
 
   .popup__text {
@@ -110,7 +127,15 @@
     line-height: 24px;
   }
 
+  .popup__text--error {
+    padding: 0 70px;
+  }
+
   .popup__button {
     width: 460px;
+  }
+
+  .popup__button--error {
+    width: 300px;
   }
 }
