@@ -25,14 +25,10 @@ document.addEventListener("DOMContentLoaded", function (evt) {
   page_header.classList.remove("page-header--position");
   toggle_button.classList.remove("page-header__toggle--open");
   if (form) {
-/*    popup.classList.remove("popup--visible");
-    popup_container.classList.remove("popup__container--visible");
-    popup_error.classList.remove("popup-error--visible");
-    popup_error_container.classList.remove("popup-error__container--visible");*/
     page_header_inner.classList.remove("page-header--inner-position");
-    first_name.classList.remove("form__input--error");
-    last_name.classList.remove("form__input--error");
-    mail.classList.remove("form__input--error");
+    first_name.classList.remove("form__input--color");
+    last_name.classList.remove("form__input--color");
+    mail.classList.remove("form__input--color");
   }
 });
 
@@ -52,35 +48,32 @@ if (form) {
   form_button.addEventListener("click", function (evt) {
     if (!first_name.value || !last_name.value || !mail.value) {
       evt.preventDefault();
-/*      popup_error.classList.remove("popup-error--visible");
-      popup_error_container.classList.remove("popup-error__container--visible");
-      popup_error.offsetWidth = popup_error.offsetWidth;*/
       popup_error.classList.add("popup-error--visible");
       popup_error_container.classList.add("popup-error__container--visible");
-      first_name.classList.add("form__input--error");
-      last_name.classList.add("form__input--error");
-      mail.classList.add("form__input--error");
+      first_name.classList.add("form__input--color");
+      last_name.classList.add("form__input--color");
+      mail.classList.add("form__input--color");
       if (first_name.value) {
-        first_name.classList.remove("form__input--error");
+        first_name.classList.remove("form__input--color");
       }
       if (last_name.value) {
-        last_name.classList.remove("form__input--error");
+        last_name.classList.remove("form__input--color");
       }
       if (mail.value) {
-        mail.classList.remove("form__input--error");
+        mail.classList.remove("form__input--color");
       }
     } else {
       evt.preventDefault();
       popup.classList.add("popup--visible");
       popup_container.classList.add("popup__container--visible");
-      if (first_name.classList.contains("form__input--error")) {
-        first_name.classList.remove("form__input--error");
+      if (first_name.classList.contains("form__input--color")) {
+        first_name.classList.remove("form__input--color");
       }
-      if (last_name.classList.contains("form__input--error")) {
-        last_name.classList.remove("form__input--error");
+      if (last_name.classList.contains("form__input--color")) {
+        last_name.classList.remove("form__input--color");
       }
-      if (mail.classList.contains("form__input--error")) {
-        mail.classList.remove("form__input--error");
+      if (mail.classList.contains("form__input--color")) {
+        mail.classList.remove("form__input--color");
       }
     }
   });
