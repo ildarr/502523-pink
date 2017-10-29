@@ -11,10 +11,10 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
-var htmlmin = require('gulp-htmlmin');
+var htmlmin = require("gulp-htmlmin");
 var include = require("posthtml-include");
-var uglify = require('gulp-uglify');
-var pump = require('pump');
+var uglify = require("gulp-uglify");
+var pump = require("pump");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
@@ -51,14 +51,14 @@ gulp.task("html", function () {
 });
 
 gulp.task("compress", function (cb) {
-  pump([
-        gulp.src("js/*.js"),
-        uglify(),
-        gulp.dest("build/js")
-    ],
-    cb
-  );
-});
+   pump([
+         gulp.src("js/*.js"),
+         uglify(),
+         gulp.dest("build/js")
+     ],
+     cb
+   );
+ });
 
 gulp.task("images", function () {
   return gulp.src("img/**/*.{png,jpg,svg}")
@@ -105,5 +105,5 @@ gulp.task("clean", function () {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "sprite", "html", "compress", done);
+  run("clean", "copy", "style", "sprite", "html", done);
 })
