@@ -1,7 +1,7 @@
 .reviews {
   position: relative;
   overflow: hidden;
-  padding: 42px 0 87px 0;
+  padding: 42px 0 42px 0;
 }
 
 .reviews__list {
@@ -36,10 +36,12 @@
 
 .reviews__text {
   margin: 0;
+  margin-bottom: 21px;
 }
 
-.reviews__toggle {
-  display: none;
+.reviews__toggles {
+  margin-left: 2px;
+  text-align: center;
 }
 
 .reviews__controls {
@@ -95,7 +97,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding-bottom: 68px;
+    padding-bottom: 21px;
   }
 
   .reviews__list {
@@ -125,6 +127,7 @@
     display: inline;
     font-size: 14px;
     line-height: 30px;
+    margin-bottom: 23px;
   }
 
   .reviews__controls {
