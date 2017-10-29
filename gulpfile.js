@@ -50,12 +50,6 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("minify", function() {
-  return gulp.src("*.html")
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest("build"));
-});
-
 gulp.task("compress", function (cb) {
   pump([
         gulp.src("js/*.js"),
@@ -111,5 +105,5 @@ gulp.task("clean", function () {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "sprite", "html", "minify", "compress", done);
+  run("clean", "copy", "style", "sprite", "html", "compress", done);
 })

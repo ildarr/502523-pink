@@ -16,7 +16,7 @@
         <div class="page-header__menu page-header__menu--inner">
           <div class="page-header__menu-container">
             <div class="page-header__heading page-header__heading--background">
-              <a class="page-header__logo-link">
+              <a class="page-header__logo-inner" href="index.html">
                 <span class="visually-hidden">Логотип Пинк</span>
                 <svg class="page-header__image page-header__image--mobile" width="74.426px" height="22.859px">
                   <use xlink:href="#icon-pink-white-mobile"></use>
@@ -145,15 +145,6 @@
                 поля
             </small>
           </div>
-          <div class="popup-error">
-            <div class="popup-error__container">
-              <b class="popup-error__heading">Что-то пошло не так!</b>
-              <p class="popup-error__text">
-                Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-              </p>
-              <button class="popup-error__button button" type="button">OK</button>
-            </div>
-          </div>
           <div class="popup">
             <div class="popup__container">
               <b class="popup__heading">Ваша заявка отправлена</b>
@@ -165,11 +156,20 @@
               </div>
             </div>
           </div>
+          <div class="popup popup--error">
+            <div class="popup__container popup__container--error">
+              <b class="popup__heading popup__heading--error">Что-то пошло не так!</b>
+              <p class="popup__text popup__text--error">
+                Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+              </p>
+              <button class="popup__button popup__button--error button" type="button">OK</button>
+            </div>
+          </div>
         </form>
       </main>
       <footer class="page-footer">
         <div class="page-footer__container">
-          <a class="page-footer__logo-link" href="index.html">
+          <a class="page-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Логотип Пинк</span>
             <svg class="page-footer__image page-footer__image--mobile" width="146.3px" height="40.375px">
               <use xlink:href="#icon-pink-blue-mobile"></use>

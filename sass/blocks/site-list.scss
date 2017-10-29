@@ -29,7 +29,8 @@
 }
 
 .site-list__link[href]:active {
-  color: $menu-active-color;
+  color: $font-initial-color;
+  opacity: 0.3;
 }
 
 @media (min-width: $desktop-width) {

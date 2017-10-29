@@ -5,11 +5,11 @@ var page_header = document.querySelector(".page-header");
 var page_header_inner = document.querySelector(".page-header--inner");
 var page_header_menu = document.querySelector(".page-header__menu");
 var popup = document.querySelector(".popup");
+var popup_error = document.querySelector(".popup--error");
 var popup_container = document.querySelector(".popup__container");
-var popup_error = document.querySelector(".popup-error");
-var popup_error_container = document.querySelector(".popup-error__container");
-var popup_error_button = document.querySelector(".popup-error__button");
+var popup_container_error = document.querySelector(".popup__container--error");
 var popup_button = document.querySelector(".popup__button");
+var popup_button_error = document.querySelector(".popup__button--error");
 var form = document.querySelector(".form");
 var form_button = document.querySelector(".form__button");
 var first_name = document.querySelector("[name=first-name]");
@@ -48,8 +48,9 @@ if (form) {
   form_button.addEventListener("click", function (evt) {
     if (!first_name.value || !last_name.value || !mail.value) {
       evt.preventDefault();
-      popup_error.classList.add("popup-error--visible");
-      popup_error_container.classList.add("popup-error__container--visible");
+      popup_error.classList.add("popup--visible");
+      popup_container_error.classList.add("popup__container--visible");
+      popup_container_error.classList.add("popup__container--error-visible");
       first_name.classList.add("form__input--color");
       last_name.classList.add("form__input--color");
       mail.classList.add("form__input--color");
@@ -64,8 +65,10 @@ if (form) {
       }
     } else {
       evt.preventDefault();
-      popup.classList.add("popup--visible");
-      popup_container.classList.add("popup__container--visible");
+      if (!popup.classList.contains("popup--error")) {
+        popup.classList.add("popup--visible");
+        popup_container.classList.add("popup__container--visible");
+      }
       if (first_name.classList.contains("form__input--color")) {
         first_name.classList.remove("form__input--color");
       }
@@ -78,13 +81,16 @@ if (form) {
     }
   });
 
-  popup_error_button.addEventListener("click", function (evt) {
+  popup_button_error.addEventListener("click", function (evt) {
     evt.preventDefault();
-    if (popup_error.classList.contains("popup-error--visible")) {
-      popup_error.classList.remove("popup-error--visible");
+    if (popup_error.classList.contains("popup--visible")) {
+      popup_error.classList.remove("popup--visible");
     }
-    if (popup_error_container.classList.contains("popup-error__container--visible")) {
-      popup_error_container.classList.remove("popup-error__container--visible");
+    if (popup_container_error.classList.contains("popup__container--visible")) {
+      popup_container_error.classList.remove("popupcontainer--visible");
+    }
+    if (popup_container_error.classList.contains("popup__container--error-visible")) {
+      popup_container_error.classList.remove("popup__container--error-visible");
     }
   });
 
@@ -100,17 +106,20 @@ if (form) {
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-      if (popup_error.classList.contains("popup-error--visible")) {
-        popup_error.classList.remove("popup-error--visible");
-      }
-      if (popup_error_container.classList.contains("popup-error__container--visible")) {
-        popup_error_container.classList.remove("popup-error__container--visible");
-      }
       if (popup.classList.contains("popup--visible")) {
         popup.classList.remove("popup--visible");
       }
       if (popup_container.classList.contains("popup__container--visible")) {
         popup_container.classList.remove("popup__container--visible");
+      }
+      if (popup_error.classList.contains("popup--visible")) {
+        popup_error.classList.remove("popup--visible");
+      }
+      if (popup_container_error.classList.contains("popup__container--visible")) {
+        popup_container_error.classList.remove("popupcontainer--visible");
+      }
+      if (popup_container_error.classList.contains("popup__container--error-visible")) {
+        popup_container_error.classList.remove("popup__container--error-visible");
       }
     }
   });

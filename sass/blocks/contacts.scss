@@ -3,7 +3,8 @@
   z-index: 20;
 }
 
-.contacts__triangle {
+.contacts::after {
+  content: "";
   position: absolute;
   z-index: 30;
   width: 320px;
@@ -71,7 +72,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__triangle {
+  .contacts::after {
     width: $tablet-width;
     height: 68px;
     bottom: 305px;
@@ -84,6 +85,7 @@
   }
 
   .contacts__intro {
+    padding: 0 50px;
     margin-bottom: 21px;
   }
 
@@ -117,7 +119,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contacts__triangle {
+  .contacts::after {
     width: 100%;
     height: 126px;
     bottom: 375px;
@@ -136,6 +138,7 @@
   }
 
   .contacts__intro {
+    padding: 0 200px;
     margin-bottom: 31px;
   }
 

@@ -8,10 +8,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <div class="container">
-      <div style="display: none">
-        <include src="build/img/sprite.svg"></include>
-      </div>
       <header class="page-header page-header--position">
         <div class="page-header__menu">
           <div class="page-header__menu-container">
@@ -116,16 +116,11 @@
           </div>
         </section>
         <section class="reviews">
-<!--          <input class="reviews__toggle" type="radio" id="reviwes-petrov" name="toggle" checked>
-          <input class="reviews__toggle" type="radio" id="reviwes-maizel" name="toggle">
-          <input class="reviews__toggle" type="radio" id="reviwes-korbain" name="toggle">
-          <div class="reviews__controls">
-            <label class="reviews__label" for="reviwes-petrov"></label>
-            <label class="reviews__label" for="reviwes-maizel"></label>
-            <label class="reviews__label" for="reviwes-korbain"></label>
-          </div>
-          <button class="reviews__button-left reviews__button-left--visible" type="button" aria-label="Влево"></button>
--->
+          <button class="reviews__button" type="button" aria-label="Влево">
+            <svg class="reviews__button-image" width="21.706" height="41.719">
+              <use xlink:href="#icon-review-arrow-left"></use>
+            </svg>
+          </button>
           <div class="reviews__slider slider">
             <h2 class="visually-hidden">Отзывы</h2>
             <div class="reviews__list slider__list">
@@ -158,20 +153,15 @@
               <button class="slider__toggle" type="button"></button>
             </p>
           </div>
-          <button class="reviews__button-right reviews__button-right--visible" type="button" aria-label="Вправо"></button>
+          <button class="reviews__button reviews__button--right" type="button" aria-label="Вправо">
+            <svg class="reviews__button-image" width="21.706" height="41.719">
+              <use xlink:href="#icon-review-arrow-right"></use>
+            </svg>
+          </button>
         </section>
         <section class="price">
-          <input class="price__toggle" type="radio" id="price-base" name="price-toggle">
-          <input class="price__toggle" type="radio" id="price-standart" name="price-toggle" checked>
-          <input class="price__toggle" type="radio" id="price-unlimited" name="price-toggle">
-          <div class="price__controls">
-            <label class="price__label" for="price-base"></label>
-            <label class="price__label" for="price-standart"></label>
-            <label class="price__label" for="price-unlimited"></label>
-          </div>
-          <div class="price__slider">
+          <div class="price__slider slider">
             <h2 class="visually-hidden">Тарифы</h2>
-            <div class="price__wrapper">
               <table class="price__table">
                 <tr>
                   <th class="price__aside-head"></th>
@@ -285,13 +275,17 @@
                   </td>
                 </tr>
               </table>
-            </div>
+            <p class="price__toggles slider__toggles">
+              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle slider__toggle--active" type="button"></button>
+              <button class="slider__toggle" type="button"></button>
+            </p>
           </div>
         </section>
         <section class="contacts">
           <h2 class="visually-hidden">Наши контакты</h2>
           <div class="contacts__wrapper">
-            <p class="contacts__intro slogan">Остались вопросы?<br>Свяжитесь с нами!</p>
+            <p class="contacts__intro slogan">Остались вопросы? Свяжитесь с нами!</p>
             <ul class="contacts__list">
               <li class="contacts__item">
                 <span class="contacts__text">Звоните:</span>
@@ -307,13 +301,12 @@
               </li>
             </ul>
           </div>
-          <div class="contacts__triangle"></div>
           <div class="map" id="map-pink"></div>
         </section>
       </main>
       <footer class="page-footer page-footer--invisible">
         <div class="page-footer__container">
-          <a class="page-footer__logo-link" href="index.html">
+          <a class="page-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Логотип Пинк</span>
             <svg class="page-footer__image page-footer__image--mobile" width="146.3px" height="40.375px">
               <use xlink:href="#icon-pink-blue-mobile"></use>

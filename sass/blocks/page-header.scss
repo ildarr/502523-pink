@@ -53,11 +53,11 @@
   fill: $logo-header-color;
 }
 
-.page-header__logo-link:hover .page-header__image {
+.page-header__logo-inner:hover .page-header__image {
   fill: $logo-hover-color;
 }
 
-.page-header__logo-link:active .page-header__image {
+.page-header__logo-inner:active .page-header__image {
   fill: $logo-header-color;
   opacity: 0.3;
 }
